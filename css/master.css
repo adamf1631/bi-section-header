@@ -1,0 +1,139 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+footer{
+  text-align:center;
+  padding:1rem 0;
+  z-index: 99;
+}
+
+nav{
+  z-index: 99;
+}
+
+nav a,nav li, #navbar-brand{
+  font-size:1.6rem;
+  padding:0 1.6rem;
+  justify-content:center;
+}
+.overlay{
+ position:absolute;; /* Sit on top of the page content */
+ width:100%;
+ height: 115%; /* Full height (cover the whole page) */
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+ z-index: 2;
+ overflow: hidden;
+}
+.mainheader{
+  position:relative;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.headerside{
+  width:50vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.headerside-content{
+  z-index: 3;
+  color:#fff;
+}
+
+.headerside-content .fas{
+  font-size: 4rem;
+}
+
+.headerside h2{
+  font-size:3em;
+}
+
+.headerside-left{
+  background-image: url('../header-imgs/image-left.jpg');
+}
+.headerside-right{
+  background-image: url('../header-imgs/image-right.jpg');
+}
+#menuBtn{
+  position:absolute;
+  z-index: 500;
+}
+
+#closeBtn{
+  float:right;
+}
+
+#nav-overlay{
+  display: none;
+  text-align: center;
+  cursor: pointer;
+  position:absolute;
+  z-index: 500;
+  width:40vw;
+  height:100vh;
+  background-color: rgb(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.navlist{
+  top:35%;
+  display: flex;
+}
+.second-nav li{
+  list-style:none;
+}
+.second-nav a{
+  color:#333;
+  text-decoration: none;
+  font-size:3rem;
+}
+.second-nav a:hover{
+  text-decoration: none;
+  color:#fff;
+}
+
+.nav-icon fas{
+  background-color:#222;
+  color:
+  font-size:4rem;
+}
+
+.section{
+  height:400px;
+  padding:3rem 15%;
+  z-index: 99;
+}
+
+.sect-dark{
+  background-color: #333;
+  color:#fff;
+}
+
+.sect-light{
+  background-color: #fff;
+  color:#333;
+}
